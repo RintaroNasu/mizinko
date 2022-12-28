@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ミジンコ式GTD</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+      <%= favicon_link_tag('favicon.ico') %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    <body>
+        <div class="parent">
+            <div class="slider">
+                <div class="slider-inner">
+                    <%= image_tag 'top.jpg', class:'top' %>
+                    <%= image_tag 'top2.jpg' ,class:'top' %>
+                </div>
+            </div>
+            <div class="slider1">
+                <div class="slider-inner1">
+                    <%= image_tag 'top3.jpg', class:'top2' %>
+                    <%= image_tag 'top4.jpg' ,class:'top2' %>
+                </div>
+            </div>
+        </div>
+        <footer>
+          <h1 class="circle">ミジンコ式GTD</h1>
+          <%= link_to '新規登録', new_user_registration_path, class:'touroku' %>
+          <%= link_to 'ログイン', new_user_session_path, class:'touroku' %>
+          <% if user_signed_in? %>
+              <%= link_to "マイページへ", user_path(current_user.id) %>
+              <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+          <% end %>
+          <p>Copyright © GeekSalon All Rights Reserved.</p>
+          <a href=“address_to@example.com”>メールはこちらへ</a>
+        </footer>
+      </body>
+</html>

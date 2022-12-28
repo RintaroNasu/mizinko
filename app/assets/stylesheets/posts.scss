@@ -1,0 +1,110 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.slider {
+    // width: 300px;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider-inner {
+    // width: 300%;
+    animation: slider 6s infinite ease;
+}
+@keyframes slider {
+    0% {
+    transform: translatey(0);
+    }
+    10% {
+    transform: translatey(-100vh);
+    }
+    50% {
+    transform: translatey(-100vh);
+}
+
+    60% {
+    transform: translatey(0);
+    }
+}
+.top{
+    width: 50vw !important;
+    height: 100vh !important;
+    transition:all 3s ease-out;
+}
+.top:hover{
+    transition:all 3s ease-out;
+    -webkit-transition:all 3s ease-out;
+    -moz-transition:all 3s ease-out;
+    -o-transition:all 3s ease-out;
+}
+.top2{
+    width: 50vw !important;
+    height: 100vh !important;
+}
+.top2:hover{
+    transition:all 3s ease-out;
+    -webkit-transition:all 3s ease-out;
+    -moz-transition:all 3s ease-out;
+    -o-transition:all 3s ease-out;
+}
+.parent{
+    display: flex;
+}
+.slider1 {
+    // width: 300px;
+    width: 50vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider-inner1 {
+    // width: 300%;
+    animation: slider1 6s infinite ease;
+    position: relative;
+    bottom: 100vh;
+}
+@keyframes slider1 {
+    0% {
+    transform: translatey(0);
+    }
+    10% {
+    transform: translatey(100vh);
+    }
+    50% {
+    transform: translatey(100vh);
+}
+
+    60% {
+    transform: translatey(0);
+    }
+}
+.mizinko{
+    position: relative;
+    top: 50vh;
+}
+.title{
+    position: relative;
+    top: 50vh;
+}
+body{
+    margin-top: 0;
+}
+.circle{
+    font-size: 4em;
+    width: 500px;
+    position: relative;
+    left: 30vw;
+    bottom: 65vh;
+}
+footer{
+    height: 40px;
+}
+body{
+    min-height: 500px;
+}
+.touroku{
+    font-weight: 1500;
+    font-size: larger;
+    position: relative;
+    left: 90vw;
+    bottom: 20vh;
+}
