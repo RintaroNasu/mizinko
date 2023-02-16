@@ -14,7 +14,7 @@
       <h1>ミジンコ式GTD</h1>
       <div class="header-list">
         <ul>
-          <%= link_to '新規登録', new_user_registration_path %>
+          <%# <%= link_to '新規登録', new_user_registration_path %> %>
           <%= link_to 'ログイン', new_user_session_path %>
           <% if user_signed_in? %>
             <%= link_to "マイページへ", user_path(current_user.id) %>
